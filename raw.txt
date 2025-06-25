@@ -24,7 +24,7 @@ gui.Name = "TÚ VÉ SỐ Gui 🤖"
 local iconBtn = Instance.new("TextButton", gui)
 iconBtn.Size = UDim2.new(0, 50, 0, 50)
 iconBtn.Position = UDim2.new(0, 10, 0, 10)
-iconBtn.Text = "P"
+iconBtn.Text = "T"
 iconBtn.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 iconBtn.TextColor3 = Color3.fromRGB(255, 0, 0)
 iconBtn.Font = Enum.Font.Fantasy
@@ -104,7 +104,7 @@ frame.Draggable = true
 
 local title = Instance.new("TextLabel", frame)
 title.Size = UDim2.new(1, 0, 0, 30)
-title.Text = "Pelimen Hub"
+title.Text = "MẦM NON Hub"
 title.TextColor3 = Color3.new(1, 1, 1)
 title.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 title.Font = Enum.Font.SourceSansBold
@@ -154,24 +154,6 @@ createToggle("Infinite Jump", "InfiniteJump", 10, 80)
 createToggle("Noclip", "Noclip", 10, 120)
 createToggle("ESP", "ESP", 10, 160)
 createToggle("Anti Stun", "AntiStun", 10, 200)
-
--- Link dugmad
-local ytBtn = Instance.new("TextButton", frame)
-ytBtn.Size = UDim2.new(0, 180, 0, 30)
-ytBtn.Position = UDim2.new(0, 210, 0, 40)
-ytBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-ytBtn.Text = "YouTube"
-ytBtn.TextColor3 = Color3.new(1, 1, 1)
-ytBtn.Font = Enum.Font.SourceSansBold
-ytBtn.TextSize = 18
-ytBtn.MouseButton1Click:Connect(function()
-    setclipboard("https://youtube.com/@pelimenmod?si=Ot5eX7-2OP65md1f")
-    sg:SetCore("SendNotification", {
-        Title = "Copied!",
-        Text = "YouTube link copied to clipboard!",
-        Duration = 3
-    })
-end)
 
 local siteBtn = Instance.new("TextButton", frame)
 siteBtn.Size = UDim2.new(0, 180, 0, 30)
